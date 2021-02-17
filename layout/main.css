@@ -1,0 +1,252 @@
+/* General */
+body {
+  margin: 0;
+  line-height: 1.5;
+  color: #333;
+  font-family: helvetica, arial, sans-serif;
+  overflow-wrap: break-word;
+}
+
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+  margin-top: 0.5em;
+}
+
+
+/* Links */
+a {
+  color: #03c;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+a.imglink:hover, a.imglink:active {
+  opacity: 1.0;
+  text-decoration: none;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .date a, .faq a {
+  color: #333;
+}
+
+.links {
+  margin-bottom: 0.5em;
+}
+
+.links a {
+  font-size: small;
+}
+
+.links a, .footerlinks a {
+  margin-right: 1em;
+}
+
+.links a:last-child, .footerlinks a:last-child {
+  margin-right: 0;
+}
+
+
+/* Buttons */
+.button {
+  margin-right: 0.5em;
+}
+
+.button:last-child {
+  margin-right: 0;
+}
+
+footer .button {
+  margin-bottom: 0.5em;
+}
+
+
+/* Graphs */
+img.alltime {
+  max-height: 75vh;
+  max-width: {{ img_max_width }}%;
+}
+
+img.recent {
+  max-height: 90vh;
+  max-width: 100%;
+}
+
+
+/* Code */
+pre, code, samp, kbd {
+  font-family: monospace,monospace;
+  color: #006;
+}
+
+pre code, pre samp, pre kbd {
+  font-size: 0.9em;
+}
+
+pre {
+  background: #eee;
+  padding: 0.5em;
+  overflow: auto;
+}
+
+
+/* Quotations */
+blockquote {
+  border-left: medium solid #ccc;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0.5em;
+  background: #eee;
+}
+
+blockquote *:first-child {
+  margin-top: 0;
+}
+
+blockquote *:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Single column layout */
+main, footer > div {
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1em;
+}
+
+
+/* Footer */
+footer {
+    background: #eee;
+    border-top: thin solid #ccc;
+    margin-top: 1em;
+    padding-top: 1.25em;
+    padding-bottom: 1em;
+    box-shadow: 0 100vh 0 100vh #eee;
+}
+
+footer div div {
+    font-size: small;
+}
+
+
+/* Tables */
+table.grid {
+  border-collapse: collapse;
+  text-align: right;
+  margin-top: 1em;
+}
+
+table.grid th, table.grid td {
+  border-width: thin;
+  border-style: solid;
+  border-color: #666;
+}
+
+table.grid th, table.grid td {
+  padding: 0.3em 0.4em;
+}
+
+table.grid td {
+  white-space: nowrap;
+}
+
+.date {
+  text-align: center;
+}
+
+.total, .total a {
+  color: #06c;
+}
+
+.active, .active a {
+  color: #f60;
+}
+
+.cured, .cured a {
+  color: #393;
+}
+
+.death, .death a {
+  color: #c33;
+}
+
+.neutral {
+  color: #333;
+}
+
+.ref {
+  color: #666;
+}
+
+.ref a {
+  font-size: small;
+}
+.ref sup {
+  font-size: x-small;
+}
+
+.ref a {
+  color: #666;
+}
+
+/* Latest Update Boxes */
+.latest {
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest .total, .latest .active, .latest .cured, .latest .death {
+  font-size: large;
+  width: 22%;
+  text-align: center;
+  padding: 1em 0.1em;
+  border-radius: 0.5em;
+}
+
+.latest .total {
+  background: linear-gradient(#4ae, #7df);
+  color: #006;
+}
+
+.latest .active {
+  background: linear-gradient(#ea4, #fd7);
+  color: #900;
+}
+
+.latest .cured {
+  background: linear-gradient(#5b5, #8e8);
+  color: #030;
+}
+
+.latest .death {
+  background: linear-gradient(#e77, #faa);
+  color: #600;
+}
+
+/* FAQ */
+.faq {
+  font-weight: bold;
+}
+
+
+/* Formatting */
+.textcenter {
+  text-align: center;
+}
+
+.footnote {
+  color: #666;
+  font-size: small;
+}
